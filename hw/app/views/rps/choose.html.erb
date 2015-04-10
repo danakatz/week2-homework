@@ -1,0 +1,11 @@
+<h1>Rock, Paper, Scissors</h1>
+
+This is a game of rock-paper-scissors.
+<p>
+Choose your weapon:
+<% @weapons.each_with_index do |weapon, n| %>
+  <a href="rps_play?weapon=<%= weapon %>"><%= weapon %></a>
+  <% if n < @weapons.count - 1 %>
+    //
+  <% end %>
+<% end %>
