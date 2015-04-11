@@ -1,0 +1,10 @@
+<h1>Dice Game</h1>
+<img src="http://jeffcohenonline.com/dice/<%= @dice1 %>.png">
+<img src="http://jeffcohenonline.com/dice/<%= @dice2 %>.png">
+
+<h2>Your goal is now <%= @dice1 + @dice2 %>.</h2>
+<h3>Try to get <%= @dice1 + @dice2 %> again before you roll 7.</h3>
+
+<form action="/dice/roll">
+  <button name="goal" value="<%= @dice1 + @dice2 %>">ROLL</button>
+</form>
